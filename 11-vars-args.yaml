@@ -3,5 +3,5 @@
   connection: local
   tasks:
   - name: printing user information
-      ansible.builtin.debug:
+    ansible.builtin.debug:
         msg: "Hello  {{ COURSE }}, duration is {{ DURATION }}, trainer is {{ NAME }}"
