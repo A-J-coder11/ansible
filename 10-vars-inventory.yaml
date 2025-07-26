@@ -1,0 +1,6 @@
+- name: variables from promt
+  hosts: frontend
+  tasks:
+    - name: printing user information
+      ansible.builtin.debug:
+        msg: "Hello  {{ COURSE }}, duration is {{ DURATION }}, trainer is {{ NAME }}"
