@@ -35,3 +35,9 @@
       name: jonnalagadda anand
     ansible.builtin.debug:
       msg: "{{ name | upper }}"
+
+  - name: check IP is valid or not
+    vars:
+      ip: 350.45.980.677
+    ansible.builtin.debug:
+      msg: "{{ ip | ansible.utils.ipaddr }}"
